@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox layoutX="9.0" layoutY="8.0" prefHeight="338.0" prefWidth="403.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                 </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox fx:id="TestSetting" prefHeight="37.0" prefWidth="1490.0" VBox.vgrow="NEVER">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                     <image>
+                        <Image url="@image/SettingImage.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+               </children></HBox>
+            <TabPane prefHeight="635.0" prefWidth="1495.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+              <tabs>
+                <Tab text="Testcase Design">
+                  <content>
+                    <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <SplitPane dividerPositions="0.6" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.2361015785861359" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TreeView fx:id="FolderStructure" prefHeight="393.0" prefWidth="199.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0" />
+                                                      <ScrollPane fx:id="TAbleviewScroll" fitToHeight="true" fitToWidth="true" prefHeight="414.0" prefWidth="776.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="20.0">
+                                                         <content>
+                                                            <TableView fx:id="SceneFlowsheet" editable="true" prefHeight="412.0" prefWidth="889.0">
+                                                               <columns>
+                                                                  <TableColumn fx:id="Descriptioncol" prefWidth="150.39999389648438" text="FLag" />
+                                                                  <TableColumn fx:id="Pagecol" minWidth="0.0" prefWidth="166.40005493164062" text="Step" />
+                                                                  <TableColumn fx:id="Objectpropertycol" prefWidth="283.20001220703125" text="Application" />
+                                                                  <TableColumn fx:id="Functioncol" minWidth="0.0" prefWidth="309.60003662109375" text="Object" />
+                                                                  <TableColumn fx:id="FlowParametercol" minWidth="0.0" prefWidth="138.40008544921875" text="Action" />
+                                                                  <TableColumn fx:id="FlowParametercol1" minWidth="0.0" prefWidth="138.40008544921875" text="TC_01" />
+                                                                  <TableColumn fx:id="FlowParametercol2" minWidth="0.0" prefWidth="138.40008544921875" text="DataSheet" />
+                                                               </columns>
+                                                               <padding>
+                                                                  <Insets left="1.0" right="1.0" />
+                                                               </padding>
+                                                            </TableView>
+                                                         </content>
+                                                         <padding>
+                                                            <Insets top="1.0" />
+                                                         </padding>
+                                                      </ScrollPane>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                            <items>
+                                              <AnchorPane fx:id="DATAPANE" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TabPane fx:id="DATATAB" prefHeight="237.0" prefWidth="585.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                                         <tabs>
+                                                            <Tab text="ApeLaunchDesktopData">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <TableView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                                                           <columns>
+                                                                              <TableColumn prefWidth="75.0" text="Testcase" />
+                                                                              <TableColumn prefWidth="75.0" text="Iteration" />
+                                                                              <TableColumn prefWidth="75.0" text="SubIteration" />
+                                                                              <TableColumn prefWidth="75.0" text="Keystrokes" />
+                                                                           </columns>
+                                                                        </TableView>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </content>
+                                                            </Tab>
+                                                            <Tab text="LocalData">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                               </content>
+                                                            </Tab>
+                                                         </tabs>
+                                                      </TabPane>
+                                                      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="18.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TabPane fx:id="OBJECTPANE" prefHeight="237.0" prefWidth="603.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                                         <tabs>
+                                                            <Tab text="Ape Home">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <TableView prefHeight="100.0" prefWidth="529.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="1.0">
+                                                                           <columns>
+                                                                              <TableColumn prefWidth="75.0" text="Screen_name" />
+                                                                              <TableColumn prefWidth="75.0" text="Field_name" />
+                                                                             <TableColumn prefWidth="116.0" text="Special_indicator" />
+                                                                              <TableColumn prefWidth="116.0" text="Object_type" />
+                                                                              <TableColumn prefWidth="172.0" text="Properties_English" />
+                                                                              <TableColumn minWidth="0.0" prefWidth="126.0" text="Properties_French" />
+                                                                           </columns>
+                                                                        </TableView>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </content>
+                                                            </Tab>
+                                                            <Tab text="Untitled Tab 2">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                               </content>
+                                                            </Tab>
+                                                         </tabs>
+                                                      </TabPane>
+                                                      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="18.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Execution">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                 </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
